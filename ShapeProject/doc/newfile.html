@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR" />
+		<title> 도형 그리기 Test </title>
+		<script type="application/javascript">
+			function draw() {
+			  var canvas = document.getElementById('canvas');
+			  if (canvas.getContext) {
+			    var ctx = canvas.getContext('2d');
+  ctx.beginPath();
+	    ctx.moveTo(75, 50);
+	    ctx.lineTo(100, 75);
+	    ctx.lineTo(100, 25);
+	    ctx.fill();
+}
+			}
+		</script>
+	</head>
+	<body onload='draw();'> 
+		<h1>도형 삼각형 캔버스에 표시</h1>
+<!--		<canvas id="canvas" -->
+		  width='1200' height='880' ></canvas>
+	</body>
+</html>
